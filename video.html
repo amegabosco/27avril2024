@@ -7,8 +7,10 @@
     <style>
         .video-container {
             position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            width: 80%; /* Reduced to 80% width */
+            max-width: 100%; /* Prevent overflow on small screens */
+            padding-bottom: 45%; /* Maintain aspect ratio (80% of 56.25%) */
+            margin: 0 auto; /* Center horizontally */
         }
 
         .video-container iframe {
